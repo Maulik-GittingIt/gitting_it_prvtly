@@ -1,0 +1,10 @@
+# vs code shortcuts:- 
+
+1) alt+shift+down arrow====== replicates line below
+2) alt click===== multi cursor function
+3) snippet
+4) * / % application rules and precidence :- 
+    i) precidence is left to right, in case of them being together left-most will be solved first
+    ii) priority is greater than + - and other operators, hence it will be solved before other operators
+5) alt+ f8 is to show errors 
+    
