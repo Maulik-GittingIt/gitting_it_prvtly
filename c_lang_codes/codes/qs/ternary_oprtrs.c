@@ -6,6 +6,6 @@ int main(){
     int a = 123;
     int b = 1234;
     a>b? printf("a is greater than b") : printf("b is greater than a");
-    printf("done");
+    printf("done 2:");
     return 0;
 }
