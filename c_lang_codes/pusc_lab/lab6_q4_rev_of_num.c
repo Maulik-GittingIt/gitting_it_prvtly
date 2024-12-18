@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+// question no 4 of lab 6
 int main() {
     int n, r = 0, d;
 
