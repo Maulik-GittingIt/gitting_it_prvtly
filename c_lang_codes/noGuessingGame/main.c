@@ -35,6 +35,10 @@ int main(){
 
     printf("ur no of guesses is :- %d\n",no_of_guess);
     while(getchar()!='\n');
+    /* this is used for clearing all the \n character and once it's done the while loop will be 
+    terminated we will run one more getchar () to make sure that the exe file dosent close on
+    task completion hence we can manually close it by pressing enter :-*/
+
     
     
     printf("press enter to close the game:- ");
