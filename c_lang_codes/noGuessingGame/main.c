@@ -33,7 +33,9 @@ int main(){
         
     }while(guess!=random_num);
 
-    printf("ur no of guesses is :- %d",no_of_guess);    
+    printf("ur no of guesses is :- %d\n",no_of_guess);
+    printf("press enter to close the game:- ");
+    getchar(); 
     
 
     return 0;
