@@ -16,6 +16,7 @@ int main() {
 
     // Output: Display the reversed number
     printf("Reversed number: %d\n", r);
+    printf("maulik bahl");
 
     return 0;
 }
