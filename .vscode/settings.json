@@ -1,5 +1,6 @@
 {
     "files.associations": {
         "stdlib.h": "c"
-    }
+    },
+    "liveServer.settings.multiRootWorkspaceName": "gitting_it_prvtly"
 }
