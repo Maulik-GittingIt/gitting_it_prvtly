@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    
+
+}
+.header{
+    
+    min-height: 100vh;
+    width: 100%;
+    background-image: url(images/background\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 100px;
+}
+.nav_links{
+    flex: 1;
+    text-align: right;
+
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_links ul li a{
+    color: black;
+    text-decoration: double;
+    font-size: large;
+    font-family: cav;
+}
