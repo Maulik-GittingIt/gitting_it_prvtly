@@ -1,9 +1,13 @@
 *{
     margin: 0;
     padding: 0;
-    
+
     
 
+}
+fonnt-face{
+    font-family: 'caveat';
+    src: url();
 }
 .header{
     
@@ -38,5 +42,5 @@ nav img{
     color: black;
     text-decoration: double;
     font-size: large;
-    font-family: cav;
+    
 }
