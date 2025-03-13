@@ -1,13 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-
+    
+.caveat-<uniquifier> {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
     
 
-}
-fonnt-face{
-    font-family: 'caveat';
-    src: url();
 }
 .header{
     
@@ -42,5 +44,60 @@ nav img{
     color: black;
     text-decoration: double;
     font-size: large;
+    font-family: cursive;
     
+}
+.nav_links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+
+}
+.nav_links ul li:hover::after{
+    width: 100%;
+    transition: 0.5s;
+
+}
+.text_box{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text_box h1{
+    font-size: 70px;
+}
+.text_box h2{
+    font-size: 70px;
+    font-family:mons;
+}
+.text_box p{
+    margin: 10px 0px 40px;
+    font-size: 25px;
+    font-family: cursive;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.hero-btn:hover{
+    border: 1px solid rgb(255, 235, 106);
+    background: black;
+    color: white;
+    transition: 1s;
 }
