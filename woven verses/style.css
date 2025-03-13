@@ -4,11 +4,19 @@
 }
 @font-face {
     font-family: caveat-bold;
-    src: url(Caveat-Bold.ttf);
+    src: url(fonts/Caveat-Bold.ttf);
 }
 @font-face {
     font-family: caveat-semibold;
-    src: url(Caveat-SemiBold.ttf);
+    src: url(fonts/Caveat-SemiBold.ttf);
+}
+@font-face {
+    font-family: monsieur;
+    src: url(fonts/MonsieurLaDoulaise-Regular.ttf);
+}
+@font-face {
+    font-family: geraldine;
+    src: url(fonts/GERALDINE\ PERSONAL\ USE.ttf);
 }
 .header{
     
@@ -72,15 +80,45 @@ nav img{
 .text_box h1{
     font-size: 70px;
 }
-.text_box h2{
+.r_let{
     font-size: 70px;
-    font-family:;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-family:geraldine;
+    font-weight: lighter;
+    font-stretch: wider;
 }
-.text_box p{
-    margin: 10px 0px 40px;
+
+.text_box p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_box p {
     font-size: 35px;
-    font-family: caveat-bold;
+    font-family: 'Times New Roman', Times, serif;
+    border-right: 1px solid;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: typing 2s steps(20, end) forwards, 
+               cursor .4s step-end infinite alternate;
 }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: max-content; }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent; }
+}
+
+
 .hero-btn{
     display: inline-block;
     text-decoration: none;
