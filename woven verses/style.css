@@ -1,15 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    
-.caveat-<uniquifier> {
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-  }
-    
-
+}
+@font-face {
+    font-family: caveat-bold;
+    src: url(Caveat-Bold.ttf);
+}
+@font-face {
+    font-family: caveat-semibold;
+    src: url(Caveat-SemiBold.ttf);
 }
 .header{
     
@@ -44,7 +43,7 @@ nav img{
     color: black;
     text-decoration: double;
     font-size: large;
-    font-family: cursive;
+    font-family: caveat-semibold;
     
 }
 .nav_links ul li::after{
@@ -75,12 +74,12 @@ nav img{
 }
 .text_box h2{
     font-size: 70px;
-    font-family:mons;
+    font-family:;
 }
 .text_box p{
     margin: 10px 0px 40px;
-    font-size: 25px;
-    font-family: cursive;
+    font-size: 35px;
+    font-family: caveat-bold;
 }
 .hero-btn{
     display: inline-block;
