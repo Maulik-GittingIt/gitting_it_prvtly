@@ -1,0 +1,120 @@
+/* TRAFFIC LIGHT */ 
+
+int red=12; 
+int yellow=11; 
+int green=10; 
+
+
+
+
+void setup() { 
+pinMode(green,OUTPUT); 
+pinMode(yellow,OUTPUT);
+pinMode(red,OUTPUT); 
+} 
+
+
+void loop() { //repeat loop continuously 
+digitalWrite(green,HIGH); 
+delay(10000); 
+digitalWrite(green,LOW); 
+delay(250); 
+
+
+digitalWrite(yellow,HIGH); 
+delay(3000); //wait 3 seconds 
+digitalWrite(yellow,LOW);  
+delay(250); 
+
+
+digitalWrite(red,HIGH); 
+delay(15000); //wait 15 seconds 
+digitalWrite(red,LOW); 
+delay(250); 
+}
+
+
+
+
+ultra sonic sensor
+
+int trigPin = 9;
+int echoPin = 10;
+long time;
+float distance;
+
+void setup()
+{
+  pinMode(trigPin, OUTPUT); // SETTING OUTPUT PIN
+  pinMode(echoPin, INPUT); // SETTING INPUT PIN
+  Serial.begin(9600); // INITIALISING THE COMMUNICATION
+}
+
+void loop()
+{
+  digitalWrite(trigPin,LOW);
+  delayMicroseconds(2);
+
+  // transmitting sound for 10 microseconds
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(10, LOW);
+
+  // calculating distance
+  time=pulseIn(echoPin , HIGH);
+  Serial.print("time: ");
+  Serial.println(time);
+  distance = time * 0.0343/2;
+
+  // Printing out the final output => distance
+  Serial.print("Distance:");
+  Serial.println(distance);
+
+}
+
+servo motor
+#include <Servo.h>  // Include the Servo library 
+
+int servoPin = 10;   // Declare the Servo pin 
+Servo Servo1;        // Create a servo object 
+int offTime = 1000;
+
+void setup() { 
+    
+   Servo1.attach(servoPin); // We need to attach the servo to the used pin number
+}
+void loop(){ 
+   
+   Servo1.write(0); // Make servo go to 0 degrees 
+   delay(offTime); 
+  
+   Servo1.write(90);  // Make servo go to 90 degrees 
+   delay(offTime); 
+  
+   Servo1.write(180);  // Make servo go to 180 degrees 
+   delay(offTime); 
+}
+
+dc motor
+#include <AFMotor.h>  
+
+AF_DCMotor motor(3);  // '3' as motor connected to 3rd terminal  
+
+void setup() {  
+    // put your setup code here, to run once:  
+}  
+
+void loop() {  
+    // put your main code here, to run repeatedly:  
+    motor.setSpeed(100);  // to set speed of the motor b/w 0 to 225 rpm  
+    motor.run(FORWARD);   // to run in forward direction.  
+
+    delay(2000);  
+    motor.run(RELEASE);   // to stop the motor.  
+    delay(1000);  
+    motor.run(BACKWARD);  // to run in backward direction.  
+
+    delay(2000);  
+    motor.run(RELEASE);   // to stop the motor.  
+    delay(1000);  
+}
