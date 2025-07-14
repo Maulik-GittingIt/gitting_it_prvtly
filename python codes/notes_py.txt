@@ -1,0 +1,38 @@
+list:- sequence of elements which is mutable, []
+    predefined functions:- 
+        l1.sort():- sorts the list asc order
+        l1.reverse():- reverses the order of elements in a list
+        l1.append(8):- appends 8 into the list, at the last
+        l1.insert(3,8):- inserts 8 at index no 3
+        l1.pop(2):- pops element at index no 2
+        l1.remove(21):- removes 21 from the list
+        
+tuple:- sequence of elements which is immuatble, (), can have diffrent types of elements. 
+    predefined functions:- 
+        tuple1.count(2):- counts the no of occurance of 2 in the tuple tuple1
+        tuple1.index(2):- tells the index at which 2 is in the tuple 
+        ⬇tuple1.index(3,2):- finds element 3's index no starting from index no 2, element before it wont be considered, till the len of tupe. 
+        we can also define the end of the index search by adding a 3rd value.
+
+        these functions accept tuple as an input:-
+            len(tuple1)
+            min(tuple1)
+            max()
+            sum()
+            sorted() # retur a sorted list of elements in tuple1
+
+        operations:- 
+        1) unpacking:- 
+            t = (1,2,3)
+            a,b,c = t
+            print(a,b,c) # a = 1, b = 2,c = 3
+        2) slicing:-
+            print(t[1;2]) #index no 1 se leke 2 tak
+        3) concatination:- 
+            t1 = (1,2)
+            t2 = (3,4)
+            print(t1+t2) #(1,2,3,4)
+        4) repitition:-
+            print(t1 * 3)  # (1, 2, 1, 2, 1, 2)
+        5) 
+

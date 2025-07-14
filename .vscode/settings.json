@@ -2,5 +2,35 @@
     "files.associations": {
         "stdlib.h": "c"
     },
-    "liveServer.settings.multiRootWorkspaceName": "gitting_it_prvtly"
+    "liveServer.settings.multiRootWorkspaceName": "gitting_it_prvtly",
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "maulik's",
+            "database": "myshop",
+            "username": "admin",
+            "password": "@MUll$17"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "connection_name",
+            "database": "sys",
+            "username": "root",
+            "connectionTimeout": 30
+        }
+    ]
 }
