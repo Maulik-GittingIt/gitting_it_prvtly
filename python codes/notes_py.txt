@@ -9,8 +9,8 @@ list:- sequence of elements which is mutable, []
         
 tuple:- sequence of elements which is immuatble, (), can have diffrent types of elements. 
     predefined functions:- 
-        tuple1.count(2):- counts the no of occurance of 2 in the tuple tuple1
-        tuple1.index(2):- tells the index at which 2 is in the tuple 
+        ➡️tuple1.count(2):- counts the no of occurance of 2 in the tuple tuple1
+        ➡️ tuple1.index(2):- tells the index at which 2 is in the tuple 
         ⬇️➡️tuple1.index(3,2):- finds element 3's index no starting from index no 2, element before it wont be considered, till the len of tupe. 
         we can also define the end of the index search by adding a 3rd value.
 
@@ -37,6 +37,35 @@ tuple:- sequence of elements which is immuatble, (), can have diffrent types of 
         
 dictionary:- they are unordered, mutable, indexed => if we write the key the value will be sent immediately without the interpretor trying to locate the key like in list which search for the index, and they cant contain duplicate values, 
 
-operations on dictionary:-
-    
+    operations on dictionary:-
+        -> my_dict.clear():- clears the dictionary 
+        
+        -> my_dict.copy():- creates a shallow copy of the dictonary, i.e the outer key and value pair is coppied but the values inside is like a refroence to the values in the orignal dictionary so any change done to the shallow copy's values will be reflected to the orignal values in the orignal dictionary.
 
+        -> new_dict = dict.fromkeys(dict_name, value's_value)
+        creates a new dictionary with keys from dict_name and it's values set to the value mentioned after the name of the dictionary. 
+        -> dict_name.items():- creates a list of key value pair tuple. 
+        -> dict_name.keys():- returns a list of keys from dict_name
+        -> dict_name.update({"key":"value"}):- updates dict_name with the supplied key value pair
+        -> dict_name.get("key"):- returns the value attached to the specified key from dict_name
+        -> value = my_dict.pop("keys", "default value):- deltes the key and returns the value stored in it. 
+        -> items = my_dict.popitem():- removes all the key and value pairs from the dictionary and pairs are returned as LIFO order
+        -> len(dict_name)
+
+Sets:- {} are also used to make a set if we dont add key and value pair and simply add value
+        s = {2,3,5,6,7,4}
+        but;
+        dict_empty = {}
+        and;
+        set_empty = set()
+    in a set the values cant be repeated(ha wahi maths wale sets hai ye) it will let u input multiple values but will only register it once and also dosent maintain any order, unlike list.
+    they are also un-indexed. 
+    methods used on sets:- 
+        -> set_name.add('value'):- adds the given value in the set, can be str, float, int any data types
+        ->len(set_name)
+        -> set_name.remove(89)
+        -> set_name.pop():- removes a random element from the set
+        -> set_name.union(set_name2):- returns the union of the two sets maths wala union
+        -> set_name.intersection(set_name2):- maths wala intersection dega 2ono sets ka 
+            note:- for the output of union and intersection:- 
+            a new set will be created with the result. 
