@@ -11,7 +11,7 @@ tuple:- sequence of elements which is immuatble, (), can have diffrent types of 
     predefined functions:- 
         tuple1.count(2):- counts the no of occurance of 2 in the tuple tuple1
         tuple1.index(2):- tells the index at which 2 is in the tuple 
-        ⬇tuple1.index(3,2):- finds element 3's index no starting from index no 2, element before it wont be considered, till the len of tupe. 
+        ⬇️➡️tuple1.index(3,2):- finds element 3's index no starting from index no 2, element before it wont be considered, till the len of tupe. 
         we can also define the end of the index search by adding a 3rd value.
 
         these functions accept tuple as an input:-
@@ -34,5 +34,9 @@ tuple:- sequence of elements which is immuatble, (), can have diffrent types of 
             print(t1+t2) #(1,2,3,4)
         4) repitition:-
             print(t1 * 3)  # (1, 2, 1, 2, 1, 2)
-        5) 
+        
+dictionary:- they are unordered, mutable, indexed => if we write the key the value will be sent immediately without the interpretor trying to locate the key like in list which search for the index, and they cant contain duplicate values, 
+
+operations on dictionary:-
+    
 
