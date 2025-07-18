@@ -48,7 +48,7 @@ dictionary:- they are unordered, mutable, indexed => if we write the key the val
         -> dict_name.keys():- returns a list of keys from dict_name
         -> dict_name.update({"key":"value"}):- updates dict_name with the supplied key value pair
         -> dict_name.get("key"):- returns the value attached to the specified key from dict_name
-        -> value = my_dict.pop("keys", "default value):- deltes the key and returns the value stored in it. 
+        -> value = my_dict.pop("keys", "default value):- deletes the key and returns the value stored in it. 
         -> items = my_dict.popitem():- removes all the key and value pairs from the dictionary and pairs are returned as LIFO order
         -> len(dict_name)
 
