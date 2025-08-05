@@ -1,0 +1,7 @@
+The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet at least once. Python is a versatile programming language that emphasizes readability and simplicity. Many developers enjoy using it for data analysis, web development, automation, and scripting. In a world increasingly driven by code, mastering file handling can be a valuable skill. Practice makes perfect, and reading from or writing to files is a great place to start. Remember to always close the file when you're done, or better yet, use a 'with' statement.
+hello i am maulik bahlyo yo honey singhhello i also maulik What about u?/ni hope it works, added / instead of \, heeheheheheh
+now is it working?
+
+
+if the empty lines are printing then it is working great in python terminal
+hehehehehehenowww
