@@ -70,6 +70,42 @@ while(True):
 for i in list_stu:
     print(i.name, "is in class room number", i.class_room_no)
     # i can make a stack and add values in it
-    
+
+stu_name = []
+stu_age = []
+stu_roll = []
+school_cate_list = []
+teacher_list = []
+room_no_list = []
+
+for i in list_stu:
+    stu_name.append(i.name)
+    stu_age.append(i.age)
+    stu_roll.append(i.roll)
+    school_cate_list.append(i.school_cate)
+    teacher_list.append(i.c_t)
+    room_no_list.append(i.class_room_no)
+print("\nname:- \t", end = "\t")
+for i in stu_name:
+    print(str(i).ljust(10), end = "\t")
+print("\nage- \t", end = "\t")
+for i in stu_age:
+    print(str(i).ljust(10), end = "\t")
+print("\nroll:- \t", end = "\t")
+for i in stu_roll:
+    print(str(i).ljust(10), end = "\t")
+print("\nschool:-", end = "\t")
+for i in school_cate_list:
+    print(str(i).ljust(10), end = "\t")
+print("\nteacher:-", end = "\t")
+for i in teacher_list:
+    print(str(i).ljust(10), end = "\t")
+print("\nroom no:-", end = "\t")
+for i in room_no_list:
+    print(str(i).ljust(10), end = "\t")
+
+
+
+
         
 
