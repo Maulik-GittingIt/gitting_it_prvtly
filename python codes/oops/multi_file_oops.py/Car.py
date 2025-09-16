@@ -4,6 +4,7 @@ class Car:
         self.model = model
     def __str__(self):
         return f"Car(Brand: {self.brand}, model:{self.model})"
+    
 
 objs = []
 
