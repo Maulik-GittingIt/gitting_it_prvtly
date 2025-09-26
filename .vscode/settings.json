@@ -32,5 +32,6 @@
             "username": "root",
             "connectionTimeout": 30
         }
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "enabled"
 }
